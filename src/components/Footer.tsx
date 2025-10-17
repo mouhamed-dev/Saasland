@@ -145,7 +145,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="#" onClick={oups}
                   className="text-gray-400 hover:text-saas-orange transition-colors"
                 >
                   Blog
@@ -153,7 +153,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#" onClick={oups}
                   className="text-gray-400 hover:text-saas-orange transition-colors"
                 >
                   Contactez-nous
@@ -161,7 +161,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#" onClick={oups}
                   className="text-gray-400 hover:text-saas-orange transition-colors"
                 >
                   A propos

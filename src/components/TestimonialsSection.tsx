@@ -4,27 +4,27 @@ import React from 'react';
 const testimonials = [
   {
     text: "La mise en œuvre de Sassland a révolutionné notre équipe. L'interface intuitive et les fonctionnalités puissantes ont considérablement amélioré notre productivité et notre collaboration.",
-    author: "Sarah Johnson",
-    position: "CTO, TechSolutions Inc.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100"
+    author: "Mamadou Fofana",
+    position: "CTO, TechInnovations",
+    image: "public/img/1.png"
   },
   {
-    text: "Le support client de Sassland est exceptionnel. Ils ont été extrêmement réactifs et nous ont aidé à optimiser notre workflow pour tirer le meilleur parti de la plateforme.",
-    author: "Michael Chen",
-    position: "Operations Director, Nexus Corp",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100"
+    text: "Le support client de Sassland est exceptionnel. Ils ont été extrêmement réactifs et nous ont aidé à optimiser notre workflow pour tirer le meilleur parti de la plateforme, cet outil est devenu essentiel de nos opérations quotidiennes.",
+    author: "Khadija Diallo",
+    position: "Directrice des opérations",
+    image: "public/img/2.png"
   },
   {
     text: "Nous avons essayé plusieurs plateformes SaaS avant, mais Sassland offre le parfait équilibre entre fonctionnalités et facilité d'utilisation. Il est devenu une partie essentielle de nos opérations quotidiennes.",
-    author: "Emily Rodriguez",
-    position: "Product Manager, Innovation Labs",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100"
+    author: "Seydina Assane DIOP",
+    position: "Chef de produit, TechInnovations",
+    image: "public/img/3.png"
   }
 ];
 
 const TestimonialsSection = () => {
   return (
-    <div className="bg-saas-black py-16 md:py-24" id='avis'>
+    <div className="bg-saas-black" id='avis'>
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

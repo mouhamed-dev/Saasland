@@ -22,7 +22,7 @@ const Navbar = () => {
   if (section) {
     section.scrollIntoView({ behavior: "smooth" });
   } else {
-    alert("Section introuvable 😅");
+    alert("Section introuvable 😒");
   }
 };
 

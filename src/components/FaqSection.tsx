@@ -36,7 +36,7 @@ const faqs = [
 
 const FaqSection = () => {
   return (
-    <div className="bg-saas-black py-16 md:py-24 border-t border-gray-800" id='faq'>
+    <div className="bg-saas-black border-t border-gray-800" id='faq'>
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

@@ -31,20 +31,6 @@ const HeroSection = () => {
                 Contacter le service commercial
               </Button>
             </div>
-            
-            {/* <div className="mt-10 flex items-center justify-center gap-4">
-              <div className="flex -space-x-3">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64" 
-                  className="w-10 h-10 rounded-full border-2 border-saas-black" alt="User" />
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64" 
-                  className="w-10 h-10 rounded-full border-2 border-saas-black" alt="User" />
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=64&h=64" 
-                  className="w-10 h-10 rounded-full border-2 border-saas-black" alt="User" />
-              </div>
-              <p className="text-sm text-gray-300">
-                <span className="font-semibold text-saas-orange">500+</span> entreprises utilisent déjà notre plateforme
-              </p>
-            </div> */}
           </div>
           
           <div className="mt-24 animate-fade-in" style={{animationDelay: '0.5s'}}>
