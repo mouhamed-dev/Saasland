@@ -6,19 +6,19 @@ const testimonials = [
     text: "La mise en œuvre de Sassland a révolutionné notre équipe. L'interface intuitive et les fonctionnalités puissantes ont considérablement amélioré notre productivité et notre collaboration.",
     author: "Mamadou Fofana",
     position: "CTO, TechInnovations",
-    image: "https://raw.githubusercontent.com/mouhamed-dev/Saasland/01349402a0bad44fd5b02ccb82ba36085f14faa8/public/img/1.png"
+    image: "https://github.com/mouhamed-dev/Saasland/blob/dcb4ce113cd7f7c02bb348b776a5d542705e3c44/public/img/1.png?raw=true"
   },
   {
     text: "Le support client de Sassland est exceptionnel. Ils ont été extrêmement réactifs et nous ont aidé à optimiser notre workflow pour tirer le meilleur parti de la plateforme, cet outil est devenu essentiel de nos opérations quotidiennes.",
     author: "Khadija Diallo",
     position: "Directrice des opérations",
-    image: "https://raw.githubusercontent.com/mouhamed-dev/Saasland/01349402a0bad44fd5b02ccb82ba36085f14faa8/public/img/2.png"
+    image: "https://github.com/mouhamed-dev/Saasland/blob/dcb4ce113cd7f7c02bb348b776a5d542705e3c44/public/img/2.png?raw=true"
   },
   {
     text: "Nous avons essayé plusieurs plateformes SaaS avant, mais Sassland offre le parfait équilibre entre fonctionnalités et facilité d'utilisation. Il est devenu une partie essentielle de nos opérations quotidiennes.",
     author: "Seydina Assane DIOP",
     position: "Chef de produit, TechInnovations",
-    image: "https://raw.githubusercontent.com/mouhamed-dev/Saasland/01349402a0bad44fd5b02ccb82ba36085f14faa8/public/img/3.png"
+    image: "https://github.com/mouhamed-dev/Saasland/blob/dcb4ce113cd7f7c02bb348b776a5d542705e3c44/public/img/3.png?raw=true"
   }
 ];
 
