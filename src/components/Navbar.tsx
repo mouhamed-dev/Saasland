@@ -33,7 +33,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
-              <img src="public/img/datapulse-logo.png" alt="Logo" className="w-8 h-8 mr-2" />
+              <img src="https://github.com/mouhamed-dev/DataPulse/blob/b054d93d5fce4517df4964dd3e8d9ad119e6e12c/public/img/datapulse-logo.png?raw=true" alt="Logo" className="w-8 h-8 mr-2" />
               <span className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
                 DataPulse
               </span>

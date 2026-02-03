@@ -38,7 +38,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-emerald-700 blur-xl opacity-20 rounded-xl"></div>
               <div className="relative bg-emerald-600 rounded-xl border border-emerald-700/20 p-2 card-shadow transform transition-all duration-500 hover:scale-[1.01] hover:shadow-emerald-500/10 hover:shadow-lg">
                 <img 
-                  src="public/img/DataPulse.png"
+                  src="https://github.com/mouhamed-dev/DataPulse/blob/b054d93d5fce4517df4964dd3e8d9ad119e6e12c/public/img/DataPulse.png?raw=true"
                   alt="Dashboard Preview"
                   className="rounded-lg w-full"
                 />

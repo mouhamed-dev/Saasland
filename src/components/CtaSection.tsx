@@ -31,7 +31,7 @@ const CtaSection = () => {
             
             <div className="md:w-1/3">
               <img 
-                src="public/img/entreprise.jpg"
+                src="https://github.com/mouhamed-dev/DataPulse/blob/b054d93d5fce4517df4964dd3e8d9ad119e6e12c/public/img/entreprise.jpg?raw=true"
                 alt="Dashboard Preview"
                 className="rounded-lg w-full card-shadow"
               />
