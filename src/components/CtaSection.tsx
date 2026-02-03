@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 
 const CtaSection = () => {
   return (
-    <div className="bg-saas-darkGray">
+    <div className="bg-[#020617]">
       <div className="section-container">
-        <div className="bg-gradient-to-r from-saas-orange/20 to-amber-600/20 rounded-2xl p-8 md:p-12 relative overflow-hidden">
+        <div className="bg-gradient-to-r from-emerald-400/20 to-emerald-600/20 rounded-2xl p-8 md:p-12 relative overflow-hidden">
           {/* Abstract glow effect */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-saas-orange opacity-20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-600 opacity-10 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-600 opacity-20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-600 opacity-10 rounded-full blur-3xl"></div>
           
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="md:w-2/3">
@@ -17,13 +17,13 @@ const CtaSection = () => {
                 Prêt à transformer votre entreprise ?
               </h2>
               <p className="text-gray-300 mb-6 max-w-xl">
-                Rejoignez des milliers de entreprises qui sont déjà améliorant leurs opérations et croissant leurs affaires avec Sassland. Commencez votre essai gratuit aujourd'hui.
+                Rejoignez des milliers d'entreprises qui ont choisi d'améliorer leurs opérations et leurs affaires avec DataPulse. Commencez votre essai gratuit aujourd'hui.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-saas-orange hover:bg-orange-600 text-white font-semibold">
+                <Button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold">
                   Commencer l'essai gratuit
                 </Button>
-                <Button variant="outline" className="border-background text-white hover:bg-white hover:text-saas-black hover:border-white">
+                <Button variant="outline" className="bg-[#020617] border-emerald-600 text-white hover:bg-white hover:text-emerald-600 hover:border-emerald-600">
                   Planifier une démo
                 </Button>
               </div>
@@ -31,7 +31,7 @@ const CtaSection = () => {
             
             <div className="md:w-1/3">
               <img 
-                src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=300&h=300&q=80"
+                src="public/img/entreprise.jpg"
                 alt="Dashboard Preview"
                 className="rounded-lg w-full card-shadow"
               />

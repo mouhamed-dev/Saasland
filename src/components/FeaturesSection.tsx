@@ -4,32 +4,32 @@ import { Check, Search, Settings, User, Home, Calendar } from 'lucide-react';
 
 const features = [
   {
-    icon: <Search className="h-6 w-6 text-saas-orange" />,
+    icon: <Search className="h-6 w-6 text-emerald-500" />,
     title: 'Analyse intelligente',
     description: 'Obtenez des insights valables avec notre analyse avancée, vous aidera à prendre des décisions basées sur les données.'
   },
   {
-    icon: <Settings className="h-6 w-6 text-saas-orange" />,
+    icon: <Settings className="h-6 w-6 text-emerald-500" />,
     title: 'Intégration facile',
     description: 'Intégrez sans interruption avec vos outils et workflows existants. Aucun impact sur votre entreprise.'
   },
   {
-    icon: <User className="h-6 w-6 text-saas-orange" />,
+    icon: <User className="h-6 w-6 text-emerald-500" />,
     title: 'Gestion des utilisateurs',
     description: 'Gestion des utilisateurs et contrôles de permissions pour sécuriser et rendre vos données accessibles.'
   },
   {
-    icon: <Home className="h-6 w-6 text-saas-orange" />,
+    icon: <Home className="h-6 w-6 text-emerald-500" />,
     title: 'Tableau de bord personnalisable',
     description: 'Créez des tableaux de bord personnalisés adaptés à vos besoins et objectifs commerciaux.'
   },
   {
-    icon: <Calendar className="h-6 w-6 text-saas-orange" />,
+    icon: <Calendar className="h-6 w-6 text-emerald-500" />,
     title: 'Planificateur de tâches',
     description: 'Automate vos workflows avec notre système de planification de tâches puissant.'
   },
   {
-    icon: <Check className="h-6 w-6 text-saas-orange" />,
+    icon: <Check className="h-6 w-6 text-emerald-500" />,
     title: 'Suivi de progression',
     description: 'Suivez le progrès de votre équipe et vos réalisations avec des rapports en temps réel.'
   }
@@ -37,7 +37,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <div className="bg-saas-black" id='roadmap'>
+    <div className="bg-[#020617]/90" id='roadmap'>
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -53,10 +53,10 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="bg-saas-darkGray p-6 rounded-xl border border-gray-800 hover:border-saas-orange/50 transition-all duration-300 card-shadow"
+              className="bg-[#020617] p-6 rounded-xl border border-gray-800 hover:border-emerald-500/50 transition-all duration-300 card-shadow"
               style={{animationDelay: `${index * 0.1}s`}}
             >
-              <div className="bg-saas-orange/10 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
+              <div className="bg-emerald-500/10 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>

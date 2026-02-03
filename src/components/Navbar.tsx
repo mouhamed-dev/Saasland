@@ -27,14 +27,15 @@ const Navbar = () => {
 };
 
   return (
-    <nav className="bg-saas-black bg-opacity-90 backdrop-blur-sm sticky top-0 z-50 border-b border-saas-darkGray">
+    <nav className="bg-[#020617]/90 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-saas-orange to-amber-500 bg-clip-text text-transparent">
-                Sassland
+              <img src="public/img/datapulse-logo.png" alt="Logo" className="w-8 h-8 mr-2" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+                DataPulse
               </span>
             </Link>
           </div>
@@ -46,8 +47,8 @@ const Navbar = () => {
                 to="/" onClick={(e) => scrollToSection(e, "accueil")}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive("/")
-                    ? "text-saas-orange"
-                    : "text-white hover:text-saas-orange"
+                    ? "text-emerald-500"
+                    : "text-white hover:text-emerald-500"
                 }`}
               >
                 Accueil
@@ -56,8 +57,8 @@ const Navbar = () => {
                 to="#roadmap" onClick={(e) => scrollToSection(e, "roadmap")}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive("roadmap")
-                    ? "text-saas-orange"
-                    : "text-white hover:text-saas-orange"
+                    ? "text-emerald-500"
+                    : "text-white hover:text-emerald-500"
                 }`}
               >
                 Roadmap
@@ -66,8 +67,8 @@ const Navbar = () => {
                 to="#tarifs" onClick={(e) => scrollToSection(e, "tarifs")}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive("tarifs")
-                    ? "text-saas-orange"
-                    : "text-white hover:text-saas-orange"
+                    ? "text-emerald-500"
+                    : "text-white hover:text-emerald-500"
                 }`}
               >
                 Tarifs
@@ -76,8 +77,8 @@ const Navbar = () => {
                 to="#avis" onClick={(e) => scrollToSection(e, "avis")}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive("avis")
-                    ? "text-saas-orange"
-                    : "text-white hover:text-saas-orange"
+                    ? "text-emerald-500"
+                    : "text-white hover:text-emerald-500"
                 }`}
               >
                 Avis
@@ -86,8 +87,8 @@ const Navbar = () => {
                 to="#faq" onClick={(e) => scrollToSection(e, "faq")}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive("faq")
-                    ? "text-saas-orange"
-                    : "text-white hover:text-saas-orange"
+                    ? "text-emerald-500"
+                    : "text-white hover:text-emerald-500"
                 }`}
               >
                 FAQ
@@ -96,8 +97,8 @@ const Navbar = () => {
                 to="#contact" onClick={(e) => scrollToSection(e, "contact")}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isActive("contact")
-                    ? "text-saas-orange"
-                    : "text-white hover:text-saas-orange"
+                    ? "text-emerald-500"
+                    : "text-white hover:text-emerald-500"
                 }`}
               >
                 Contact
@@ -134,14 +135,14 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-saas-darkGray">
+        <div className="md:hidden bg-[#020617]/90">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               to="/" onClick={(e) => scrollToSection(e, "accueil")}
               className={`block px-3 py-2 text-base font-medium ${
                 isActive("/")
-                  ? "text-saas-orange"
-                  : "text-white hover:text-saas-orange"
+                  ? "text-emerald-500"
+                  : "text-white hover:text-emerald-500"
               }`}
             >
               Accueil
@@ -150,8 +151,8 @@ const Navbar = () => {
               to="#roadmap" onClick={(e) => scrollToSection(e, "roadmap")}
               className={`block px-3 py-2 text-base font-medium ${
                 isActive("roadmap")
-                  ? "text-saas-orange"
-                  : "text-white hover:text-saas-orange"
+                  ? "text-emerald-500"
+                  : "text-white hover:text-emerald-500"
               }`}
             >
               Roadmap
@@ -160,8 +161,8 @@ const Navbar = () => {
               to="tarifs" onClick={(e) => scrollToSection(e, "tarifs")}
               className={`block px-3 py-2 text-base font-medium ${
                 isActive("tarifs")
-                  ? "text-saas-orange"
-                  : "text-white hover:text-saas-orange"
+                  ? "text-emerald-500"
+                  : "text-white hover:text-emerald-500"
               }`}
             >
               Tarifs
@@ -170,8 +171,8 @@ const Navbar = () => {
               to="avis" onClick={(e) => scrollToSection(e, "avis")}
               className={`block px-3 py-2 text-base font-medium ${
                 isActive("avis")
-                  ? "text-saas-orange"
-                  : "text-white hover:text-saas-orange"
+                  ? "text-emerald-500"
+                  : "text-white hover:text-emerald-500"
               }`}>
               Contact
             </Link>
@@ -179,8 +180,8 @@ const Navbar = () => {
               to="faq" onClick={(e) => scrollToSection(e, "faq")}
               className={`block px-3 py-2 text-base font-medium ${
                 isActive("faq") || location.pathname.startsWith("/")
-                  ? "text-saas-orange"
-                  : "text-white hover:text-saas-orange"
+                  ? "text-emerald-500"
+                  : "text-white hover:text-emerald-500"
               }`}
             >
               FAQ

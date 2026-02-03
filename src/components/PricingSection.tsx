@@ -8,7 +8,7 @@ const PricingSection = () => {
   
   const plans = [
     {
-      name: 'Démarreur',
+      name: 'Pulse Basic',
       monthlyPrice: 19,
       annualPrice: 15,
       description: 'Parfait pour les petites entreprises et les freelances',
@@ -20,10 +20,10 @@ const PricingSection = () => {
         '1 projet'
       ],
       isPopular: false,
-      ctaText: 'Commencer avec le Démarreur'
+      ctaText: 'Commencer avec le Pulse Basic'
     },
     {
-      name: 'Professionnel',
+      name: 'Pulse Advanced',
       monthlyPrice: 49,
       annualPrice: 39,
       description: 'Parfait pour les entreprises en croissance et les équipes',
@@ -37,10 +37,10 @@ const PricingSection = () => {
         'Intégration personnalisée'
       ],
       isPopular: true,
-      ctaText: 'Commencer avec Pro'
+      ctaText: 'Commencer avec le Pulse Advanced'
     },
     {
-      name: 'Entreprise',
+      name: 'Pulse Enterprise',
       monthlyPrice: 99,
       annualPrice: 79,
       description: 'Pour les grandes organisations avec des besoins complexes',
@@ -61,7 +61,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-saas-darkGray to-saas-black" id='tarifs'>
+    <div className="bg-[#020617]/90" id='tarifs'>
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -73,18 +73,18 @@ const PricingSection = () => {
           
           {/* Pricing toggle */}
           <div className="flex items-center justify-center space-x-4 mb-12">
-            <span className={`text-sm font-medium ${isAnnual ? 'text-saas-orange' : 'text-gray-400'}`}>
-              Annuel <span className="text-xs text-saas-orange">(économisez 20 %)</span>
+            <span className={`text-sm font-medium ${isAnnual ? 'text-emerald-500' : 'text-gray-400'}`}>
+              Annuel <span className="text-xs text-emerald-500">(économisez 20 %)</span>
             </span>
             <button 
               onClick={() => setIsAnnual(!isAnnual)}
-              className={`relative inline-flex h-6 w-12 items-center rounded-full transition-colors ${isAnnual ? 'bg-saas-orange' : 'bg-gray-600'}`}
+              className={`relative inline-flex h-6 w-12 items-center rounded-full transition-colors ${isAnnual ? 'bg-emerald-500' : 'bg-gray-600'}`}
             >
               <span 
                 className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${isAnnual ? 'translate-x-7' : 'translate-x-1'}`}
               />
             </button>
-            <span className={`text-sm font-medium ${!isAnnual ? 'text-saas-orange' : 'text-gray-400'}`}>
+            <span className={`text-sm font-medium ${!isAnnual ? 'text-emerald-500' : 'text-gray-400'}`}>
               Mensuel
             </span>
           </div>
@@ -96,12 +96,12 @@ const PricingSection = () => {
               key={index} 
               className={`rounded-2xl p-8 transition-all duration-300 ${
                 plan.isPopular 
-                  ? 'bg-gradient-to-b from-saas-orange/20 to-saas-black border border-saas-orange/30 transform hover:-translate-y-2' 
-                  : 'bg-saas-darkGray border border-gray-800 transform hover:-translate-y-1'
+                  ? 'bg-[#020617]/90 border border-emerald-500/30 transform hover:-translate-y-2' 
+                  : 'bg-[#020617]/90 border border-gray-800 transform hover:-translate-y-1'
               }`}
             >
               {plan.isPopular && (
-                <span className="bg-saas-orange text-saas-black text-xs font-bold px-3 py-1 rounded-full uppercase mb-4 inline-block">
+                <span className="bg-emerald-500 text-saas-black text-xs font-bold px-3 py-1 rounded-full uppercase mb-4 inline-block">
                   Le plus populaire
                 </span>
               )}
@@ -119,7 +119,7 @@ const PricingSection = () => {
               <ul className="space-y-4 mb-8">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start">
-                    <Check className="h-5 w-5 text-saas-orange mr-2 shrink-0" />
+                    <Check className="h-5 w-5 text-emerald-500 mr-2 shrink-0" />
                     <span className="text-gray-300">{feature}</span>
                   </li>
                 ))}
@@ -128,8 +128,8 @@ const PricingSection = () => {
               <Button 
                 className={`w-full ${
                   plan.isPopular 
-                    ? 'bg-saas-orange hover:bg-orange-600 text-white' 
-                    : 'bg-secondary border border-saas-orange/30 hover:border-saas-orange text-white'
+                    ? 'bg-emerald-500 hover:bg-emerald-600 text-white' 
+                    : 'bg-[#020617]/90 border border-emerald-500/30 hover:border-emerald-500 text-white'
                 }`}
               >
                 {plan.ctaText}

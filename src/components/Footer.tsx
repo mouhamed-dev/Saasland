@@ -10,14 +10,15 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-saas-black border-t border-gray-800 pt-16 pb-8">
+    <footer className="bg-[#020617] border-t border-gray-800 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Company info */}
           <div className="col-span-1 md:col-span-1">
-            <a href="#" className="inline-block mb-4">
-              <span className="text-2xl font-bold bg-gradient-to-r from-saas-orange to-amber-500 bg-clip-text text-transparent">
-                Sassland
+            <a href="#" className="inline-block mb-4 flex items-center">
+              <img src="public/img/datapulse-logo.png" alt="Logo" className="w-8 h-8 mr-2" />
+              <span className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+                DataPulse
               </span>
             </a>
             <p className="text-gray-400 mb-4">
@@ -26,8 +27,8 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
-                className="text-gray-400 hover:text-saas-orange transition-colors"
+                href="#" onClick={oups}
+                className="text-gray-400 hover:text-emerald-500 transition-colors"
               >
                 <svg
                   className="h-5 w-5"
@@ -43,8 +44,8 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
-                className="text-gray-400 hover:text-saas-orange transition-colors"
+                href="#" onClick={oups}
+                className="text-gray-400 hover:text-emerald-500 transition-colors"
               >
                 <svg
                   className="h-5 w-5"
@@ -56,8 +57,8 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
-                className="text-gray-400 hover:text-saas-orange transition-colors"
+                href="#" onClick={oups}
+                className="text-gray-400 hover:text-emerald-500 transition-colors"
               >
                 <svg
                   className="h-5 w-5"
@@ -73,8 +74,8 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
-                className="text-gray-400 hover:text-saas-orange transition-colors"
+                href="#" onClick={oups}
+                className="text-gray-400 hover:text-emerald-500 transition-colors"
               >
                 <svg
                   className="h-5 w-5"
@@ -93,13 +94,13 @@ const Footer = () => {
           </div>
 
           {/* Product links */}
-          <div>
+          <div className="hidden md:block">
             <h3 className="text-lg font-semibold mb-4">Produit</h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   Accueil
                 </a>
@@ -107,7 +108,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   Roadmap
                 </a>
@@ -115,7 +116,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   Tarification
                 </a>
@@ -123,15 +124,15 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   Documentation
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  href="#" 
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   Fonctionnalités
                 </a>
@@ -140,13 +141,13 @@ const Footer = () => {
           </div>
 
           {/* Company links */}
-          <div>
+          <div className="hidden md:block">
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#" onClick={oups}
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   Blog
                 </a>
@@ -154,7 +155,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#" onClick={oups}
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   Contactez-nous
                 </a>
@@ -162,7 +163,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#" onClick={oups}
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   A propos
                 </a>
@@ -170,7 +171,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#" onClick={oups}
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   Carrières
                 </a>
@@ -180,12 +181,12 @@ const Footer = () => {
 
           {/* Legal links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Legal</h3>
+            <h3 className="text-lg font-semibold mb-4">Informations Légales</h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#" onClick={oups}
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   Politique de confidentialité
                 </a>
@@ -193,7 +194,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#" onClick={oups}
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   Conditions d'utilisation
                 </a>
@@ -201,7 +202,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#" onClick={oups}
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   Politique des cookies
                 </a>
@@ -209,7 +210,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#" onClick={oups}
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                  className="text-gray-400 hover:text-emerald-500 transition-colors"
                 >
                   GDPR
                 </a>
@@ -219,22 +220,21 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm flex md:flex-row flex-col justify-between">
           <p>
-            © {new Date().getFullYear()} Sassland. Tous droits réservés. Développé par
-            <span className="text-white"><a href="https://mouhatech.com/" target="_blank" rel="noopener noreferrer"> MouhaTech</a></span>
+            © {new Date().getFullYear()} DataPulse. Tous droits réservés. Plateforme SaaS
           </p>
-          {/* <p>
-            Distribué par{" "}
+          {<p>
+            Développé et maintenu par{" "}
             <a
-              href="https://themewagon.com/"
+              href="https://mouhatech.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-saas-orange hover:underline"
+              className="text-white/60 font-semibold hover:underline"
             >
-              ThemeWagon
+              MouhaTech
             </a>
-          </p> */}
+          </p> }
         </div>
       </div>
     </footer>
